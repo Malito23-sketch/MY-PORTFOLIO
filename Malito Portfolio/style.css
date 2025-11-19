@@ -1,0 +1,296 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* NAVIGATION */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #0e0d0d;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  color: #f7fbfc;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #13b6be;
+}
+
+/* SECTIONS */
+section {
+  min-height: 100vh;
+  padding: 120px 20px;
+}
+
+/* HOME */
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #00adb5, #393e46);
+  color: white;
+}
+
+#home .content {
+  max-width: 50%;
+}
+
+#home h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+#home h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#home img {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.highlight {
+  color: #00fff5;
+}
+
+.btn {
+  background: #00adb5;
+  padding: 12px 25px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #dfe5e6;
+  color:rgb(6, 43, 43);
+}
+
+/* ABOUT */
+#about {
+  background: white;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  max-width: 100%x;
+}
+
+/* Flexbox layout */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  
+}
+/* Left image placeholder */
+.about-image img {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);  
+}
+/* Note under the image */
+.project-note {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+/* Right text content */
+.about-text {
+  flex: 1;
+  margin-left: 40px;
+  min-width: 250px;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+/* LinkedIn icon styling */
+.linkedin-link {
+  display: inline-block;
+  color: cyan;
+  background: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.linkedin-link i {
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.linkedin-link:hover {
+ transform: scale(1.2);
+}
+
+/* PROJECTS */
+#projects {
+  background: linear-gradient(135deg, #00adb5, #393e46);
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+#contact {
+background: white;
+  color: black;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+button {
+  background: #00adb5;
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #007b7f;
+}
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 40px;
+  color: #3a3a3a;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* hover colors */
+.github:hover { color: #000000; }
+.instagram:hover { color: #000000; }
+.linkedin:hover { color: #000000; }
+.whatsapp:hover { color: #000000; }
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+}
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
